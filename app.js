@@ -28,7 +28,7 @@ async function start() {
   try {
     await mongoose.connect(config.get("mongoUri"), {});
     app.listen(PORT, () => {
-      console.log(`App has been listening on post ${PORT}`);
+      console.log(`App has been listening on port ${PORT}`);
     });
   } catch (e) {
     console.log("Server error", e.message);
